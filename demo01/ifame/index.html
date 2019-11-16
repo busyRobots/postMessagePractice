@@ -17,7 +17,8 @@
     <script>
         function loadPost() {
             console.info("loadPost-before");
-            window.postMessage("我要发送的信息", "http://127.0.0.1:8080/");
+            // 此处使用 window.postMessage 无法发送信息；但是用top，就可以成功发送，需要思考
+            top.postMessage("我要发送的信息", "http://127.0.0.1:8080/");
             console.info("loadPost-after");
         }
     </script>
