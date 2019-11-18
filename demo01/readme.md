@@ -10,3 +10,12 @@ http-serve -p 8080
 # 在 demo01/iframe的目录下，运行命令：
 http-serve -p 5000
 # 即可模拟出一个跨域嵌套的场景
+```
+
+* 在页面上访问：  
+```javascript
+//因为iframe页面嵌入的地方，是以127.0.0.1 的格式进行书写的
+
+http://127.0.0.1:8080/index.html
+
+```
