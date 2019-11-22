@@ -1,0 +1,15 @@
+{
+  "name": "demo01",
+  "version": "1.0.0",
+  "description": "### 模拟多个域的手段； * 依赖于npm包 http-server； * 在不同目录下，启动2个不同端口的静态服务器；",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn && http-serve -p 8080 -o && http-serve ./iframe -p 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  }
+}
