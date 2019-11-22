@@ -18,6 +18,7 @@
         function loadPost() {
             console.info("loadPost-before");
             // 此处使用 window.postMessage 无法发送信息；但是用top，就可以成功发送，需要思考
+            // 使用postMessage，进行跨域通信，需要使用目标域下window对象，所对应的postMessage,进行通信，故此处使用top 获取页面的顶层对象；
             top.postMessage("我要发送的信息", "http://127.0.0.1:8080/");
             console.info("loadPost-after");
         }
